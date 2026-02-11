@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at ...
+I'm a finance guy that loves startups 
 
 ## Research Interests
 
