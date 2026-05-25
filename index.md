@@ -20,3 +20,10 @@ Currently, I'm expanding my creative skill set through coursework in digital art
 <p>
 Beyond finance and code, I shoot with premium rangefinder-style digital cameras and optimize health metrics using WHOOP fitness tracking.
 </p>
+
+
+<span style="display:inline-block; width:12px; height:24px; background-color:#00FFFF; animation: blink 1s step-end infinite;"></span>
+
+<style>
+@keyframes blink { 50% { opacity: 0; } }
+</style>
