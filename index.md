@@ -1,3 +1,7 @@
+---
+layout: homepage
+---
+
 <h2 id="about-me">About Me</h2>
 <p>
 I'm Dom, a finance professional and designer based in New York City. With over six years of experience as an early finance hire at Robinhood, I specialize in scaling teams, analyzing venture philosophies, and navigating the fintech space.
@@ -20,10 +24,3 @@ Currently, I'm expanding my creative skill set through coursework in digital art
 <p>
 Beyond finance and code, I shoot with premium rangefinder-style digital cameras and optimize health metrics using WHOOP fitness tracking.
 </p>
-
-
-<span style="display:inline-block; width:12px; height:24px; background-color:#00FFFF; animation: blink 1s step-end infinite;"></span>
-
-<style>
-@keyframes blink { 50% { opacity: 0; } }
-</style>
