@@ -1,28 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <title>{{ site.title }} | {{site.affiliation}}</title>
-
+    <title>D/DOAN | {{site.affiliation}}</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.description }}">
-    {% if site.keywords %}
-    <meta name="keywords" content="{{ site.keywords }}">
-    {% endif %}
-    {% if site.canonical %}
-    <link rel="canonical" href="{{ site.canonical }}"/>
-    {% endif %}
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
-    {% if site.auto_dark_mode %}
-    <link rel="stylesheet" href="./assets/css/style.css">
-    {% else %}
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" />
+    
     <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css">
-    {% endif %}
 
     <style>
       @keyframes blink { 50% { opacity: 0; } }
@@ -30,206 +15,87 @@
   </head>
   
   <body>
-    <div class="wrapper">
-      <header>
-        
+    <div class="container">
+      
+      <aside class="sidebar">
         {% if site.avatar %}
-        <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" /></a>
+        <img src="{{ site.avatar }}" alt="D/DOAN Avatar" />
+        {% else %}
+        <pre class="ascii-art" style="font-size: 10px; text-align: center; overflow: hidden;">
+._________________.
+| SYSTEM_OP v1.0  |
+|_________________|
+|      _____      |
+|    .##@@@##.    |
+|   #@@@@@@@@@#   |
+|  #@@@#   #@@@#  |
+|  #@@@@@@@@@@@#  |
+|   #@@\_=_/@@#   |
+|    `##@@@##'    |
+|      _|_|_      |
+|___/         \___|
+        </pre>
         {% endif %}
 
-        <h1>C:\> {{ site.title }}.EXE<span style="display:inline-block; width:12px; height:24px; background-color:#00FFFF; animation: blink 1s step-end infinite; vertical-align: middle; margin-left: 5px;"></span></h1>
-
-        <div style="margin-top: 20px; margin-bottom: 20px;">
-          {% if site.position %}
-          <div>SYS_ROLE: {{ site.position }}</div>
-          {% endif %}
-          
-          {% if site.affiliation %}
-          <div>SYS_LOC: {{ site.affiliation }}</div>
-          {% endif %}
-          
+        <div class="social-icons">
           {% if site.email %}
-          <div>SYS_MAIL: <a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
+          <a href="mailto:{{ site.email }}" title="Email"><i class="fas fa-envelope"></i></a>
           {% endif %}
-        </div>
-
-        <div class="dos-menu" style="margin-bottom: 30px;">
-          {% if site.cv_link %}
-          <a style="margin-right: 10px;" href="{{ site.cv_link }}">[ RESUME.TXT ]</a>
-          {% endif %}
-
+          
           {% if site.github_link %}
-          <a style="margin-right: 10px;" href="{{ site.github_link }}">[ GITHUB.COM ]</a>
+          <a href="{{ site.github_link }}" title="GitHub"><i class="fab fa-github"></i></a>
           {% endif %}
-
+          
           {% if site.linkedin %}
-          <a style="margin-right: 10px;" href="{{ site.linkedin }}">[ LINKEDIN.BAT ]</a>
+          <a href="{{ site.linkedin }}" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
           {% endif %}
         </div>
+
+        <hr style="border: 1px dashed var(--border-color); margin-bottom: 20px;">
+
+        <ul class="nav-links">
+          <li><a href="#about-me">ABOUT.EXE</a></li>
+          <li><a href="#projects">PROJECTS.DIR</a></li>
+          <li><a href="#interests">INTERESTS.CFG</a></li>
+          {% if site.cv_link %}
+          <li><a href="{{ site.cv_link }}">RESUME.TXT</a></li>
+          {% endif %}
+        </ul>
+      </aside>
+
+      <main class="main-window">
         
-        <hr style="border: 1px dashed #00FFFF; background: none; margin-bottom: 30px;">
+        <div class="theme-controls">
+          <label for="themeSelect">COLOR_MODE:</label>
+          <select id="themeSelect" onchange="changeTheme(this.value)">
+            <option value="turbo">Turbo Cyan</option>
+            <option value="matrix">Terminal Green</option>
+            <option value="amber">Mainframe Amber</option>
+          </select>
+        </div>
 
-      </header>
-      
-      <section>
+        <header>
+          <h1>C:\> D/DOAN.EXE<span style="display:inline-block; width:10px; height:20px; background-color:var(--text-color); animation: blink 1s step-end infinite; vertical-align: middle; margin-left: 5px;"></span></h1>
+        </header>
+        
+        <section style="margin-top: 30px;">
+          {{ content }}
+        </section>
 
-      {{ content }}
+      </main>
 
-      <br>
-      <br>
-
-      {% if site.enable_footnote %}
-      <p><small>C:\> SYSTEM HALTED. <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">MINIMAL_LIGHT.SYS</a> OVERRIDDEN.</small></p>
-      {% endif %}
-
-      </section>
-    </div>
-
-        <div id="game-container">
-      <canvas id="pongCanvas" width="600" height="400"></canvas>
-      <div class="game-instructions">
-        [W]/[S] OR [UP]/[DOWN] TO MOVE <br>
-        [ESC] TO EXIT SYSTEM
-      </div>
     </div>
 
     <script>
-      // --- THEME LOGIC ---
       function changeTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('dos-theme', theme);
-        updateGameColors(); // Update Pong colors if running
       }
 
+      // Load saved theme on refresh
       const savedTheme = localStorage.getItem('dos-theme') || 'turbo';
       document.documentElement.setAttribute('data-theme', savedTheme);
       document.getElementById('themeSelect').value = savedTheme;
-
-      // --- EASTER EGG LOGIC (PONG) ---
-      let keyBuffer = '';
-      const secretCode = 'pong';
-      let gameRunning = false;
-      let gameLoop;
-      
-      const canvas = document.getElementById('pongCanvas');
-      const ctx = canvas.getContext('2d');
-      const container = document.getElementById('game-container');
-
-      // Pong Variables
-      let ballX = 300, ballY = 200;
-      let ballSpeedX = 5, ballSpeedY = 5;
-      let paddle1Y = 150, paddle2Y = 150;
-      const PADDLE_HEIGHT = 80;
-      const PADDLE_THICKNESS = 10;
-      let upPressed = false, downPressed = false;
-      
-      // Dynamic Theme Colors for Canvas
-      let themeBg, themeText;
-      function updateGameColors() {
-        const rootStyles = getComputedStyle(document.documentElement);
-        themeBg = rootStyles.getPropertyValue('--bg-color').trim();
-        themeText = rootStyles.getPropertyValue('--text-color').trim();
-      }
-
-      // Listen for the secret code or game controls
-      document.addEventListener('keydown', (e) => {
-        if (!gameRunning) {
-          keyBuffer += e.key.toLowerCase();
-          if (keyBuffer.length > secretCode.length) {
-            keyBuffer = keyBuffer.substring(1);
-          }
-          if (keyBuffer === secretCode) {
-            startPong();
-            keyBuffer = '';
-          }
-        } else {
-          // Prevent default scrolling when playing
-          if(["ArrowUp","ArrowDown","w","s"," "].indexOf(e.key) > -1) {
-            e.preventDefault();
-          }
-          if (e.key === 'ArrowUp' || e.key.toLowerCase() === 'w') upPressed = true;
-          if (e.key === 'ArrowDown' || e.key.toLowerCase() === 's') downPressed = true;
-          if (e.key === 'Escape') stopPong();
-        }
-      });
-
-      document.addEventListener('keyup', (e) => {
-        if (e.key === 'ArrowUp' || e.key.toLowerCase() === 'w') upPressed = false;
-        if (e.key === 'ArrowDown' || e.key.toLowerCase() === 's') downPressed = false;
-      });
-
-      function startPong() {
-        gameRunning = true;
-        container.style.display = 'flex';
-        updateGameColors();
-        ballX = canvas.width / 2;
-        ballY = canvas.height / 2;
-        gameLoop = setInterval(updatePong, 1000 / 60); // 60 FPS
-      }
-
-      function stopPong() {
-        gameRunning = false;
-        container.style.display = 'none';
-        clearInterval(gameLoop);
-      }
-
-      function updatePong() {
-        // Move Paddles
-        if (upPressed && paddle1Y > 0) paddle1Y -= 7;
-        if (downPressed && paddle1Y < canvas.height - PADDLE_HEIGHT) paddle1Y += 7;
-
-        // Simple AI for Right Paddle
-        let paddle2Center = paddle2Y + (PADDLE_HEIGHT / 2);
-        if (paddle2Center < ballY - 15) paddle2Y += 5;
-        else if (paddle2Center > ballY + 15) paddle2Y -= 5;
-
-        // Move Ball
-        ballX += ballSpeedX;
-        ballY += ballSpeedY;
-
-        // Wall Collision (Top/Bottom)
-        if (ballY < 0 || ballY > canvas.height) ballSpeedY = -ballSpeedY;
-
-        // Paddle Collision
-        if (ballX < PADDLE_THICKNESS) {
-          if (ballY > paddle1Y && ballY < paddle1Y + PADDLE_HEIGHT) {
-            ballSpeedX = -ballSpeedX;
-            let deltaY = ballY - (paddle1Y + PADDLE_HEIGHT / 2);
-            ballSpeedY = deltaY * 0.15;
-          } else if (ballX < 0) resetBall(); // Left wall hit
-        }
-        
-        if (ballX > canvas.width - PADDLE_THICKNESS) {
-          if (ballY > paddle2Y && ballY < paddle2Y + PADDLE_HEIGHT) {
-            ballSpeedX = -ballSpeedX;
-          } else if (ballX > canvas.width) resetBall(); // Right wall hit
-        }
-
-        drawPong();
-      }
-
-      function resetBall() {
-        ballSpeedX = -ballSpeedX;
-        ballX = canvas.width / 2;
-        ballY = canvas.height / 2;
-      }
-
-      function drawPong() {
-        // Clear screen with theme background
-        ctx.fillStyle = themeBg;
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-        // Draw elements with theme text color
-        ctx.fillStyle = themeText;
-        // Dashed Center Line
-        for(let i = 0; i < canvas.height; i += 40) {
-          ctx.fillRect(canvas.width/2 - 2, i, 4, 20);
-        }
-        // Paddles and Ball
-        ctx.fillRect(0, paddle1Y, PADDLE_THICKNESS, PADDLE_HEIGHT); // Left
-        ctx.fillRect(canvas.width - PADDLE_THICKNESS, paddle2Y, PADDLE_THICKNESS, PADDLE_HEIGHT); // Right
-        ctx.fillRect(ballX - 5, ballY - 5, 10, 10); // Ball (Square for retro feel)
-      }
     </script>
   </body>
 </html>
