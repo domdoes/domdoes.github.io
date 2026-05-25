@@ -7,7 +7,8 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" />
     
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
     <style>
       @keyframes blink { 50% { opacity: 0; } }
     </style>
@@ -62,7 +63,7 @@
         </ul>
       </aside>
 
-           <main class="main-window">
+      <main class="main-window">
         
         <div class="theme-controls">
           <label for="themeSelect">COLOR_MODE:</label>
@@ -87,18 +88,7 @@
 
     </div>
 
-    <script>
-      function changeTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('dos-theme', theme);
-      }
-
-      // Load saved theme on refresh
-      const savedTheme = localStorage.getItem('dos-theme') || 'turbo';
-      document.documentElement.setAttribute('data-theme', savedTheme);
-      document.getElementById('themeSelect').value = savedTheme;
-    </script>
-        <div id="game-container">
+    <div id="game-container">
       <canvas id="pongCanvas" width="600" height="400"></canvas>
       <div class="game-instructions">
         [W]/[S] OR [UP]/[DOWN] TO MOVE <br>
@@ -111,12 +101,24 @@
       function changeTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('dos-theme', theme);
-        updateGameColors(); // Update Pong colors if running
+        
+        // Update Pong colors if the game is actively running
+        if (typeof updateGameColors === 'function') {
+           updateGameColors(); 
+        }
       }
 
+      // Load saved theme on refresh
       const savedTheme = localStorage.getItem('dos-theme') || 'turbo';
       document.documentElement.setAttribute('data-theme', savedTheme);
-      document.getElementById('themeSelect').value = savedTheme;
+      
+      // Ensure the dropdown matches the loaded theme once the DOM is ready
+      document.addEventListener("DOMContentLoaded", () => {
+          const themeSelect = document.getElementById('themeSelect');
+          if (themeSelect) {
+              themeSelect.value = savedTheme;
+          }
+      });
 
       // --- EASTER EGG LOGIC (PONG) ---
       let keyBuffer = '';
