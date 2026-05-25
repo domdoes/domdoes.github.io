@@ -74,3 +74,42 @@ ul {
 li {
   margin-bottom: 15px;
 }
+
+
+/* --- KEYBOARD ACCESSIBILITY (FOCUS STYLES) --- */
+/* When a user tabs to a link or select element, invert the colors and add a dashed outline */
+a:focus, select:focus {
+  outline: 2px dashed var(--accent-color);
+  outline-offset: 4px;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+.nav-links a:focus::before {
+  color: var(--bg-color); /* Keeps the cursor arrow visible on focus */
+}
+
+/* --- EASTER EGG (PONG) --- */
+#game-container {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#pongCanvas {
+  border: 4px var(--border-style) var(--text-color);
+  background-color: var(--bg-color);
+  box-shadow: 15px 15px 0px var(--shadow-color);
+}
+
+.game-instructions {
+  color: var(--accent-color);
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
