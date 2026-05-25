@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
 
 /* --- THEME VARIABLES --- */
-/* Default: Turbo Cyan (Borland) */
+
+/* Default: Turbo Cyan (Borland IDE) */
 :root, [data-theme="turbo"] {
   --bg-color: #0000AA;
   --text-color: #00FFFF;
@@ -11,7 +12,7 @@
   --shadow-color: #000000;
 }
 
-/* Monochrome Green (Terminal) */
+/* Monochrome Green (Matrix / CRT Terminal) */
 [data-theme="matrix"] {
   --bg-color: #000000;
   --text-color: #00FF00;
@@ -21,7 +22,7 @@
   --shadow-color: #003300;
 }
 
-/* Monochrome Amber (Mainframe) */
+/* Monochrome Amber (Classic Mainframe) */
 [data-theme="amber"] {
   --bg-color: #000000;
   --text-color: #FFB000;
@@ -29,6 +30,26 @@
   --border-style: solid;
   --border-color: #FFB000;
   --shadow-color: #332200;
+}
+
+/* Norton Commander (Blue Background, Yellow/White Accents) */
+[data-theme="norton"] {
+  --bg-color: #0000AA;
+  --text-color: #FFFFFF;
+  --accent-color: #FFFF55;
+  --border-style: solid;
+  --border-color: #00FFFF;
+  --shadow-color: #000000;
+}
+
+/* Classic DOS (Black Background, Light Gray Text) */
+[data-theme="classic"] {
+  --bg-color: #000000;
+  --text-color: #AAAAAA;
+  --accent-color: #FFFFFF;
+  --border-style: solid;
+  --border-color: #AAAAAA;
+  --shadow-color: #222222;
 }
 
 /* --- BASE STYLES --- */
