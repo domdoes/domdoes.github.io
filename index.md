@@ -40,12 +40,13 @@ layout: homepage
   /* Skyline ASCII Art */
   #boot-skyline {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 8px; 
+    font-size: 12px; /* Increased by 50% (was 8px) */
     line-height: 1;
     color: var(--text-color);
     opacity: 0.65;
-    text-align: center;
-    margin: 0 0 -10px 0; /* Anchors it to the very bottom */
+    text-align: left; /* CRITICAL: Stops the browser from shifting individual lines */
+    align-self: center; /* Centers the entire block as one solid piece */
+    margin: 0 0 -10px 0; 
     padding: 0;
     background: none;
     border: none;
