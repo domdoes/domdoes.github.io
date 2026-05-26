@@ -68,7 +68,7 @@ layout: homepage
 I'm Dom, a finance nerd based in New York City. With over six years of experience as an early finance hire at Robinhood, I specialize in scaling teams, analyzing venture philosophies, and navigating the fintech space.
 </p>
 <p>
-Currently, I'm expanding my creative skill set through coursework in digital arts, design, and photography at Santiago Canyon College. I enjoy blending technical architecture with aesthetic design, whether that involves researching advanced financial options, writing Python automation scripts, or building out vector graphics in Figma.
+Currently, I'm expanding my creative skill set through coursework in digital arts, design, and photography. I enjoy blending technical architecture with aesthetic design, whether that involves researching advanced financial options, writing Python automation scripts, or building out vector graphics in Figma.
 </p>
 
 <h2 id="projects">C:\> DIR \PROJECTS</h2>
