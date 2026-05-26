@@ -77,7 +77,7 @@ Currently, I'm expanding my creative skill set through coursework in digital art
     <strong>Memento Mori Time-Tracker:</strong> A custom web application that visualizes a 100-year lifespan as a 24-hour clock. Focused on aesthetic UI design and lifespan data visualization.
   </li>
   <li>
-    <strong>Automated Social Tracking:</strong> Python-based tools designed to efficiently.
+    <strong>Automated Social Tracking:</strong> Python-based tools designed to efficiently...
   </li>
 </ul>
 
