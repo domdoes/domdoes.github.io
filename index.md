@@ -65,7 +65,7 @@ layout: homepage
 
 <h2 id="about-me">C:\> TYPE ABOUT_ME.TXT</h2>
 <p>
-I'm Dom, a finance professional and designer based in New York City. With over six years of experience as an early finance hire at Robinhood, I specialize in scaling teams, analyzing venture philosophies, and navigating the fintech space.
+I'm Dom, a finance nerd based in New York City. With over six years of experience as an early finance hire at Robinhood, I specialize in scaling teams, analyzing venture philosophies, and navigating the fintech space.
 </p>
 <p>
 Currently, I'm expanding my creative skill set through coursework in digital arts, design, and photography at Santiago Canyon College. I enjoy blending technical architecture with aesthetic design, whether that involves researching advanced financial options, writing Python automation scripts, or building out vector graphics in Figma.
@@ -77,11 +77,11 @@ Currently, I'm expanding my creative skill set through coursework in digital art
     <strong>Memento Mori Time-Tracker:</strong> A custom web application that visualizes a 100-year lifespan as a 24-hour clock. Focused on aesthetic UI design and lifespan data visualization.
   </li>
   <li>
-    <strong>Automated Social Tracking:</strong> Python-based web scraping tools designed to efficiently track and extract social media data.
+    <strong>Automated Social Tracking:</strong> Python-based tools designed to efficiently.
   </li>
 </ul>
 
 <h2 id="interests">Loading INTERESTS.CFG... [OK]</h2>
 <p>
-Beyond finance and code, I shoot with premium rangefinder-style digital cameras and optimize health metrics using WHOOP fitness tracking.
+Beyond finance and code, I shoot with premium digital cameras and optimize health metrics using WHOOP fitness tracking.
 </p>
