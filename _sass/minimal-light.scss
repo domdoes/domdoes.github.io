@@ -2,14 +2,14 @@
 
 /* --- THEME VARIABLES --- */
 
-/* Default: Turbo Cyan (Borland IDE) */
-:root, [data-theme="turbo"] {
-  --bg-color: #0000AA;
-  --text-color: #00FFFF;
-  --accent-color: #FFFF55;
-  --border-style: double;
-  --border-color: #00FFFF;
-  --shadow-color: #000000;
+/* Default: Monochrome Amber (Classic Mainframe) */
+:root, [data-theme="amber"] {
+  --bg-color: #000000;
+  --text-color: #FFB000;
+  --accent-color: #FFB000;
+  --border-style: solid;
+  --border-color: #FFB000;
+  --shadow-color: #332200;
 }
 
 /* Monochrome Green (Matrix / CRT Terminal) */
@@ -20,16 +20,6 @@
   --border-style: solid;
   --border-color: #00FF00;
   --shadow-color: #003300;
-}
-
-/* Monochrome Amber (Classic Mainframe) */
-[data-theme="amber"] {
-  --bg-color: #000000;
-  --text-color: #FFB000;
-  --accent-color: #FFB000;
-  --border-style: solid;
-  --border-color: #FFB000;
-  --shadow-color: #332200;
 }
 
 /* Norton Commander (Blue Background, Yellow/White Accents) */
@@ -54,9 +44,9 @@
 
 /* --- BASE STYLES --- */
 body {
-  /* Fallback defaults explicitly set to Turbo Cyan */
-  background-color: var(--bg-color, #0000AA);
-  color: var(--text-color, #00FFFF);
+  /* Fallback defaults explicitly set to Mainframe Amber */
+  background-color: var(--bg-color, #000000);
+  color: var(--text-color, #FFB000);
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
   line-height: 1.6;
