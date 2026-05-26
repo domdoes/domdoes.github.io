@@ -65,9 +65,8 @@
         <div class="theme-controls">
           <label for="themeSelect">COLOR_MODE:</label>
           <select id="themeSelect" onchange="changeTheme(this.value)">
-            <option value="turbo">Turbo Cyan</option>
-            <option value="matrix">Terminal Green</option>
             <option value="amber">Mainframe Amber</option>
+            <option value="matrix">Terminal Green</option>
             <option value="norton">Norton Commander</option>
             <option value="classic">Classic DOS</option>
           </select>
@@ -111,7 +110,7 @@
       }
 
       // Load saved theme on refresh
-      const savedTheme = localStorage.getItem('dos-theme') || 'turbo';
+      const savedTheme = localStorage.getItem('dos-theme') || 'amber';
       document.documentElement.setAttribute('data-theme', savedTheme);
       
       // Ensure the dropdown matches the loaded theme once the DOM is ready
