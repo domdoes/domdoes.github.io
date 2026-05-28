@@ -166,4 +166,3 @@ Beyond finance and code, I'm taking some language and photography classes. But I
   <li>Life is easier with all my social media notifications turned off</li>
 </ul>
 
-</p>
