@@ -115,7 +115,7 @@ layout: homepage
     "",
     "> ABOUT ME data integrity check... OK",
     "> SELECTED PROJECTS active checks... [VALIDATED]",
-    "> INTERESTS & EQUIPMENT verification... OK",
+    "> INTERESTS & PHILOSOPHY verification... OK",
     "> (SITE CONTENT LOADING...)",
     "LOAD COMPLETE. User: Dom_Doan"
   ];
