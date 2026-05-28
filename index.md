@@ -138,20 +138,23 @@ layout: homepage
 
 <h2 id="about-me">C:\> TYPE ABOUT_ME.TXT</h2>
 <p>
-I'm Dom, a finance nerd based in New York City. I was the first finance hire at Robinhood and spent 6+ years helping scale the company from early stage growth to IPO readiness. In that time, I scaled finance teams across Corporate Finance, Product Finance, Infrastructure & Engineering, Investor Relations, and Growth & Marketing.
+I'm Dom, a finance and tech nerd based in New York City. I was the first finance hire at Robinhood and spent 6+ years helping scale the company from early stage growth to IPO readiness. In that time, I scaled finance teams across Corporate Finance, Product Finance, Infrastructure & Engineering, Investor Relations, and Growth & Marketing.
 </p>
 <p>
-Now, I’m looking to return to startup life. I miss it, the ambition, the figuring it out, and the people it attracts. I want to work alongside people who will look back at what we built together and say: we took risks, we tried boldly, we failed honestly, and we tried again. I want to help build the future we all deserve.
+Now, I’m looking to return to startup life. I miss it, the ambition, the figuring it out, and the people it attracts. I want to work alongside people who will look back at what we built together and say: we took risks, we tried, we failed honestly, and we tried again. I want to help build the future we all deserve.
 </p>
 
 <h2 id="projects">C:\> DIR \PROJECTS</h2>
 <ul>
   <li>
-    <strong><a href="https://domdoes.github.io/life-clock/">Memento Mori Time-Tracker</a>:</strong> A custom web application that visualizes a 100-year lifespan as a 24-hour clock. Focused on aesthetic UI design and lifespan data visualization.
+    <strong><a href="https://domdoes.github.io/life-clock/">Memento Mori Time-Tracker</a>:</strong> A custom web application that visualizes a 100-year lifespan as a 24-hour clock. Focused on aesthetic UI design and lifespan data visualization. It helps reinforce that I have this one life and I need to make the most of it. 
   </li>
   <li>
     <strong>Automated Social Tracking:</strong> Python-based web scraping tools designed to track and extract data to get updates from some of my favorite NYC places (not a resy bot lol).
   </li>
+  <li>
+    <strong>Personal Finance Dashboard:</strong> A local-first tool that securely aggregates my financial and email data to analyze spending patterns and track progress toward my financial goals. It also provides proactive alerts for upcoming subscription renewals (e.g. streaming, utilities, insurance) and tracks  credit card benefits so no perks go to waste. 
+  </li>  
 </ul>
 
 <h2 id="interests">C:\> TYPE INTERESTS.CFG</h2>
