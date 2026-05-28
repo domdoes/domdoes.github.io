@@ -147,7 +147,7 @@ Now, I’m looking to return to startup life. I miss it, the ambition, the figur
 <h2 id="projects">C:\> DIR \PROJECTS</h2>
 <ul>
   <li>
-    <strong>[Memento Mori Time-Tracker:]([url](https://domdoes.github.io/life-clock/))</strong> A custom web application that visualizes a 100-year lifespan as a 24-hour clock. Focused on aesthetic UI design and lifespan data visualization.
+    <strong>[Memento Mori Time-Tracker:]([https://domdoes.github.io/life-clock/])</strong> A custom web application that visualizes a 100-year lifespan as a 24-hour clock. Focused on aesthetic UI design and lifespan data visualization.
   </li>
   <li>
     <strong>Automated Social Tracking:</strong> Python-based web scraping tools designed to efficiently track and extract social media data to get updates from some of my favorite NYC places.
