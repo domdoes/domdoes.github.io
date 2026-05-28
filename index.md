@@ -156,7 +156,7 @@ Now, I’m looking to return to startup life. I miss it, the ambition, the figur
     <strong>Personal Finance Dashboard:</strong> A local-first tool that securely aggregates my financial and email data to analyze spending patterns and track progress toward my financial goals. It also provides proactive alerts for upcoming subscription renewals (e.g. streaming, utilities, insurance) and tracks  credit card benefits so no perks go to waste. 
   </li>  
   <li>
-    <strong>Automated Insurance Appeals::</strong> An LLM-powered tool that ingests insurance denial letters, summarizes the core rejection reasons, and automatically drafts appeals for submission.
+    <strong>Automated Insurance Appeals:</strong> An LLM-powered tool that ingests insurance denial letters, summarizes the core rejection reasons, and automatically drafts appeals for submission.
   </li>  
 </ul>
 
