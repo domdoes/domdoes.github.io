@@ -161,5 +161,20 @@ Beyond finance and code, I'm taking some language and photography classes. But I
 
 <h2 id="philosophy">C:\> TYPE PHILOSOPHY.SYS</h2>
 <p>
-philosophy content goes here. 
+  <ul>
+  <li>
+          1. Character is destiny
+  </li>
+</ul>
+
+  <ul>
+  <li>  
+          2. My friends have always been the best of me
+  </li>
+</ul>    
+  <ul>
+  <li>
+          3. Life is easier with all my social media notifications turned off 🙃🥸😈
+  </li>
+</ul>    
 </p>
