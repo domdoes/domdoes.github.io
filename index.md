@@ -160,24 +160,11 @@ Beyond finance and code, I'm taking some language and photography classes. But I
 </p>
 
 <h2 id="philosophy">C:\> TYPE PHILOSOPHY.SYS</h2>
-<p>
-  <ul>
-  <li>
-          Character is destiny
-  </li>
-</ul>
-
-  <ul>
-  <li>  
-          My friends have always been the best of me
-  </li>
-</ul>    
-  <ul>
-  <li>
-          Life is easier with all my social media notifications turned off
-  </li>
-</ul>    
 <ul>
+  <li>Character is destiny</li>
+  <li>My friends have always been the best of me</li>
+  <li>Life is easier with all my social media notifications turned off</li>
+</ul>
   <li>
     <strong>Read:</strong> <a href="https://wood-yarn-433.notion.site/On-Friends-0c4cbf6742c149aaa3e49bdeb936b324" target="_blank" rel="noopener">On friends and relationships</a>
   </li>
