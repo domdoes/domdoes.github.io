@@ -156,5 +156,5 @@ Now, I’m looking to return to startup life. I miss it, the ambition, the figur
 
 <h2 id="interests">Loading INTERESTS.CFG... [OK]</h2>
 <p>
-Beyond finance and code, I'm taking some language and photography classes. But I'm a true finance nerd and have visited 12 different central banks. 
+Beyond finance and code, I'm taking some language and photography classes. But I'm a true finance nerd and have visited 12 different central banks.  
 </p>
