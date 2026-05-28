@@ -158,3 +158,8 @@ Now, I’m looking to return to startup life. I miss it, the ambition, the figur
 <p>
 Beyond finance and code, I'm taking some language and photography classes. But I'm a true finance nerd and have visited 12 different central banks. Hot take: I think the GOAT of central banks is the Federal Reserve. 
 </p>
+
+<h2 id="philosophy">C:\> TYPE PHILOSOPHY.SYS</h2>
+<p>
+philosophy content goes here. 
+</p>
