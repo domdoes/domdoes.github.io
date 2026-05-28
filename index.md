@@ -166,9 +166,11 @@ Beyond finance and code, I'm taking some language and photography classes. But I
 <ul>
   <li>Be a good person.</li>
   <li>Character is destiny.</li>
+  <li>Incentive drive most decisions.</li>
   <li>We have one life. Don't waste it.</li>
-  <li>I will leave the world better than I found it.</li>
   <li>We create the future we want and deserve.</li>
+  <li>I will leave the world better than I found it.</li>
+  <li>[LOADING SECTORS...] ▓▓▓▓▓░░░░░ 50%</li>
 
 </ul>
 
