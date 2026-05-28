@@ -149,6 +149,7 @@ Now, I’m looking to return to startup life. I miss it, the ambition, the figur
   <li>
     <strong><a href="https://domdoes.github.io/life-clock/">Memento Mori Time-Tracker</a>:</strong> A custom web application that visualizes a 100-year lifespan as a 24-hour clock. Focused on aesthetic UI design and lifespan data visualization.
   </li>
+  <li>
     <strong>Automated Social Tracking:</strong> Python-based web scraping tools designed to efficiently track and extract social media data to get updates from some of my favorite NYC places.
   </li>
 </ul>
