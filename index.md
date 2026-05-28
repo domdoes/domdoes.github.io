@@ -138,23 +138,23 @@ layout: homepage
 
 <h2 id="about-me">C:\> TYPE ABOUT_ME.TXT</h2>
 <p>
-I'm Dom, a finance professional and designer based in New York City. With over six years of experience as an early finance hire at Robinhood, I specialize in scaling teams, analyzing venture philosophies, and navigating the fintech space.
+I'm Dom, a finance nerd based in New York City. I was the first finance hire at Robinhood and spent 6+ years helping scale the company from early stage growth to IPO readiness. In that time, I scaled finance teams across Corporate Finance, Product Finance, Infrastructure & Engineering, Investor Relations, and Growth & Marketing.
 </p>
 <p>
-Currently, I'm expanding my creative skill set through coursework in digital arts, design, and photography at Santiago Canyon College. I enjoy blending technical architecture with aesthetic design, whether that involves researching advanced financial options, writing Python automation scripts, or building out vector graphics in Figma.
+Now, I’m looking to return to startup life. I miss it, the ambition, the figuring it out, and the people it attracts. I want to work alongside people who will look back at what we built together and say: we took risks, we tried boldly, we failed honestly, and we tried again. I want to help build the future again.
 </p>
 
 <h2 id="projects">C:\> DIR \PROJECTS</h2>
 <ul>
   <li>
-    <strong>Memento Mori Time-Tracker:</strong> A custom web application that visualizes a 100-year lifespan as a 24-hour clock. Focused on aesthetic UI design and lifespan data visualization.
+    <strong>[Memento Mori Time-Tracker:]([url](https://domdoes.github.io/life-clock/))</strong> A custom web application that visualizes a 100-year lifespan as a 24-hour clock. Focused on aesthetic UI design and lifespan data visualization.
   </li>
   <li>
-    <strong>Automated Social Tracking:</strong> Python-based web scraping tools designed to efficiently track and extract social media data.
+    <strong>Automated Social Tracking:</strong> Python-based web scraping tools designed to efficiently track and extract social media data to get updates from some of my favorite NYC places.
   </li>
 </ul>
 
 <h2 id="interests">Loading INTERESTS.CFG... [OK]</h2>
 <p>
-Beyond finance and code, I shoot with premium rangefinder-style digital cameras and optimize health metrics using WHOOP fitness tracking.
+Beyond finance and code, I'm taking some language and photography classes. But I'm a true finance nerd and have visited 12 different central banks. 
 </p>
