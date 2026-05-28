@@ -117,7 +117,7 @@ layout: homepage
     "> SELECTED PROJECTS active checks... [VALIDATED]",
     "> INTERESTS & EQUIPMENT verification... OK",
     "> (SITE CONTENT LOADING...)",
-    "LOAD COMPLETE. User: domdoes"
+    "LOAD COMPLETE. User: Dom_Doan"
   ];
   
   let delay = 0;
@@ -154,7 +154,7 @@ Now, I’m looking to return to startup life. I miss it, the ambition, the figur
   </li>
 </ul>
 
-<h2 id="interests">Loading INTERESTS.CFG... [OK]</h2>
+<h2 id="interests">C:\> TYPE INTERESTS.CFG</h2>
 <p>
 Beyond finance and code, I'm taking some language and photography classes. But I'm a true finance nerd and have visited 12 different central banks. Hot take: I think the GOAT of central banks is the Federal Reserve. 
 </p>
