@@ -161,8 +161,11 @@ Beyond finance and code, I'm taking some language and photography classes. But I
 
 <h2 id="philosophy">C:\> TYPE PHILOSOPHY.SYS</h2>
 <ul>
-  <li>Character is destiny</li>
-  <li>My friends have always been the best of me</li>
-  <li>Life is easier with all my social media notifications turned off</li>
+  <li>Be a good person.</li>
+  <li>Character is destiny.</li>
+  <li>We have one life. Don't waste it.</li>
+  <li>I will leave the world better than I found it.</li>
+  <li>We create the future we want and deserve.</li>
+
 </ul>
 
