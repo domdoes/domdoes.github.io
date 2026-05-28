@@ -163,18 +163,18 @@ Beyond finance and code, I'm taking some language and photography classes. But I
 <p>
   <ul>
   <li>
-          1. Character is destiny
+          Character is destiny
   </li>
 </ul>
 
   <ul>
   <li>  
-          2. My friends have always been the best of me
+          My friends have always been the best of me
   </li>
 </ul>    
   <ul>
   <li>
-          3. Life is easier with all my social media notifications turned off 🙃🥸😈
+          Life is easier with all my social media notifications turned off 🙃🥸😈
   </li>
 </ul>    
 </p>
