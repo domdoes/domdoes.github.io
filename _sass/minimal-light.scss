@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+/* ==========================================================================
+   RETRO TERMINAL THEME STYLESHEET
+   ========================================================================== */
 
 /* --- THEME VARIABLES --- */
 
@@ -52,52 +54,66 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 20px;
+  
+  /* Retro Cursor */
+  cursor: crosshair;
 }
 
-h1, h2, h3, h4 {
-  color: var(--accent-color);
+/* Force links to keep the retro cursor on hover */
+a, button, select {
+  cursor: crosshair !important;
+}
+
+/* --- TYPOGRAPHY & LINKS --- */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
   text-transform: uppercase;
-  font-weight: 700;
-  border-bottom: 2px dashed var(--border-color);
+  border-bottom: 1px dashed var(--border-color);
   padding-bottom: 5px;
+  margin-top: 40px;
+}
+
+h1 {
+  border-bottom: none;
   margin-top: 0;
+  font-size: 24px;
 }
 
 a {
-  color: var(--bg-color);
-  background-color: var(--text-color);
+  color: var(--text-color);
   text-decoration: none;
-  padding: 2px 6px;
-  font-weight: bold;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s, color 0.2s;
 }
 
-a:hover {
-  background-color: var(--accent-color);
+a:hover, a:focus {
+  background-color: var(--text-color);
   color: var(--bg-color);
+  border-bottom: none;
+  outline: none;
 }
 
-/* --- LAYOUT --- */
+p {
+  margin-bottom: 20px;
+}
+
+/* --- LAYOUT STRUCTURE --- */
 .container {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    flex-direction: row;
-  }
+  flex-wrap: wrap;
+  border: 2px var(--border-style) var(--border-color);
+  padding: 2px;
+  box-shadow: 10px 10px 0px var(--shadow-color);
 }
 
 /* --- SIDEBAR --- */
 .sidebar {
-  flex: 0 0 260px;
-  border: 4px var(--border-style) var(--border-color);
+  flex: 1 1 250px;
   padding: 20px;
-  background-color: var(--bg-color);
-  height: fit-content;
+  border-right: 2px var(--border-style) var(--border-color);
+  box-sizing: border-box;
 }
 
 .sidebar img, .sidebar .ascii-art {
@@ -109,24 +125,24 @@ a:hover {
 
 .social-icons {
   display: flex;
+  justify-content: center;
   gap: 15px;
   margin-bottom: 20px;
-  justify-content: center;
 }
 
 .social-icons a {
-  background: none;
-  color: var(--text-color);
-  font-size: 24px;
-  padding: 0;
+  font-size: 20px;
+  border-bottom: none;
 }
 
 .social-icons a:hover {
-  color: var(--accent-color);
+  background-color: transparent;
+  color: var(--text-color);
+  transform: scale(1.1);
 }
 
 .nav-links {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -136,83 +152,89 @@ a:hover {
 }
 
 .nav-links a {
-  background: none;
-  color: var(--text-color);
   display: block;
   padding: 5px;
-  border: 1px dashed transparent;
-}
-
-.nav-links a::before {
-  content: "> ";
-  color: var(--accent-color);
+  border-bottom: none;
 }
 
 .nav-links a:hover {
-  border-color: var(--accent-color);
-  background-color: transparent;
-  color: var(--accent-color);
+  background-color: var(--text-color);
+  color: var(--bg-color);
 }
 
-/* --- MAIN CONTENT --- */
+/* --- MAIN WINDOW --- */
 .main-window {
-  flex: 1;
-  border: 4px var(--border-style) var(--border-color);
+  flex: 3 1 500px;
   padding: 30px;
-  background-color: var(--bg-color);
-  box-shadow: 12px 12px 0px var(--shadow-color);
+  box-sizing: border-box;
+  position: relative;
 }
 
-/* --- THEME SWITCHER --- */
+/* --- THEME CONTROLS --- */
 .theme-controls {
-  text-align: right;
-  margin-bottom: 10px;
-  font-size: 14px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 12px;
 }
 
 .theme-controls select {
   background-color: var(--bg-color);
   color: var(--text-color);
-  border: 2px solid var(--border-color);
+  border: 1px solid var(--border-color);
   font-family: 'IBM Plex Mono', monospace;
-  padding: 5px;
-  cursor: pointer;
+  padding: 2px 5px;
 }
 
-/* --- KEYBOARD ACCESSIBILITY (FOCUS STYLES) --- */
-/* When a user tabs to a link or select element, invert the colors and add a dashed outline */
-a:focus, select:focus {
-  outline: 2px dashed var(--accent-color);
-  outline-offset: 4px;
-  background-color: var(--accent-color);
-  color: var(--bg-color);
+.theme-controls select:focus {
+  outline: 1px solid var(--text-color);
 }
 
-.nav-links a:focus::before {
-  color: var(--bg-color); /* Keeps the cursor arrow visible on focus */
+/* --- LISTS --- */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
 }
 
-/* --- EASTER EGG (PONG) --- */
+li {
+  margin-bottom: 10px;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+  .sidebar {
+    border-right: none;
+    border-bottom: 2px var(--border-style) var(--border-color);
+  }
+  
+  .theme-controls {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-bottom: 20px;
+    text-align: right;
+  }
+}
+
+/* --- EASTER EGG GAME CONTAINER --- */
 #game-container {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  z-index: 9999;
-  justify-content: center;
-  align-items: center;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100000;
   flex-direction: column;
-}
-
-#pongCanvas {
-  border: 4px var(--border-style) var(--text-color);
-  background-color: var(--bg-color);
-  box-shadow: 15px 15px 0px var(--shadow-color);
+  align-items: center;
+  justify-content: center;
 }
 
 .game-instructions {
-  color: var(--accent-color);
-  margin-top: 15px;
-  font-weight: bold;
+  margin-top: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #FFFFFF;
   text-align: center;
+  line-height: 1.5;
 }
