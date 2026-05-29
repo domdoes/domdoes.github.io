@@ -141,7 +141,7 @@ layout: homepage
 I'm Dom, a finance and tech nerd based in New York City. I was the first finance hire at Robinhood and spent 6+ years helping scale the company from early stage growth to IPO readiness. In that time, I scaled finance teams across Corporate Finance, Product Finance, Infrastructure & Engineering, Investor Relations, and Growth & Marketing.
 </p>
 <p>
-Now, I’m looking to return to startup life. I miss it, the ambition, the figuring it out, and the people it attracts. I want to work alongside people who will look back at what we built together and say: we took risks, we tried, we failed honestly, and we tried again. I want to help build the future we all deserve.
+Now, I’m looking to return to startup life. I miss it, the ambition, the figuring it out, and the people it attracts. I want to work alongside people who will look back at what we built together and say: we took risks, we tried, we failed honestly, and we tried again. I want to help build the future we all deserve. (A bit cheesy, but how I really feel!) 
 </p>
 
 <h2 id="projects">C:\> DIR \PROJECTS</h2>
