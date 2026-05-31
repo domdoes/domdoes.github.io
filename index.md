@@ -167,6 +167,7 @@ Beyond finance and code, I'm taking some language and photography classes. But I
 
 <h2 id="philosophy">C:\> TYPE PHILOSOPHY.SYS</h2>
 <ul>
+  <li>Festina lente.</li>
   <li>Be a good person.</li>
   <li>Character is destiny.</li>
   <li>Incentive drive most decisions.</li>
